@@ -1,0 +1,156 @@
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, f1).
+transition(f1, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, f1).
+transition(f1, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, f1).
+transition(f1, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, f1).
+transition(f1, ['#'|S1], S2, S1, S2, Res, Res, f2).
+transition(f2, S1, ['Wa'|S2], S1, S2, ['a'|Res], Res, f2).
+transition(f2, S1, ['Wb'|S2], S1, S2, ['b'|Res], Res, f2).
+transition(f2, S1, ['Wc'|S2], S1, S2, ['c'|Res], Res, f2).
+transition(f2, S1, ['#'|S2], S1, S2, Res, Res, f3).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 11).
+transition(11, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 11).
+transition(11, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 11).
+transition(11, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 11).
+transition(11, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 11).
+transition(11, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 11).
+transition(11, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 11).
+transition(11, ['S'|S1], S2, S1, ['Wa','S','B','C'|S2], Res, Res, 12).
+transition(12, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 12).
+transition(12, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 12).
+transition(12, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 12).
+transition(12, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 12).
+transition(12, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 12).
+transition(12, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 12).
+transition(12, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 13).
+transition(13, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 13).
+transition(13, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 13).
+transition(13, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 13).
+transition(13, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 13).
+transition(13, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 13).
+transition(13, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 13).
+transition(13, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 21).
+transition(21, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 21).
+transition(21, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 21).
+transition(21, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 21).
+transition(21, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 21).
+transition(21, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 21).
+transition(21, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 21).
+transition(21, ['S'|S1], S2, S1, ['Wa','Wb','Wc'|S2], Res, Res, 22).
+transition(22, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 22).
+transition(22, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 22).
+transition(22, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 22).
+transition(22, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 22).
+transition(22, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 22).
+transition(22, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 22).
+transition(22, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 23).
+transition(23, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 23).
+transition(23, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 23).
+transition(23, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 23).
+transition(23, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 23).
+transition(23, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 23).
+transition(23, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 23).
+transition(23, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 31).
+transition(31, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 31).
+transition(31, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 31).
+transition(31, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 31).
+transition(31, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 31).
+transition(31, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 31).
+transition(31, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 31).
+transition(31, ['B','C'|S1], S2, S1, ['B','C'|S2], Res, Res, 32).
+transition(32, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 32).
+transition(32, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 32).
+transition(32, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 32).
+transition(32, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 32).
+transition(32, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 32).
+transition(32, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 32).
+transition(32, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 33).
+transition(33, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 33).
+transition(33, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 33).
+transition(33, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 33).
+transition(33, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 33).
+transition(33, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 33).
+transition(33, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 33).
+transition(33, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 41).
+transition(41, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 41).
+transition(41, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 41).
+transition(41, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 41).
+transition(41, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 41).
+transition(41, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 41).
+transition(41, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 41).
+transition(41, ['B','Wc'|S1], S2, S1, ['B','Wc'|S2], Res, Res, 42).
+transition(42, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 42).
+transition(42, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 42).
+transition(42, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 42).
+transition(42, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 42).
+transition(42, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 42).
+transition(42, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 42).
+transition(42, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 43).
+transition(43, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 43).
+transition(43, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 43).
+transition(43, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 43).
+transition(43, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 43).
+transition(43, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 43).
+transition(43, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 43).
+transition(43, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 51).
+transition(51, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 51).
+transition(51, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 51).
+transition(51, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 51).
+transition(51, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 51).
+transition(51, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 51).
+transition(51, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 51).
+transition(51, ['B','Wb'|S1], S2, S1, ['Wb','Wb'|S2], Res, Res, 52).
+transition(52, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 52).
+transition(52, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 52).
+transition(52, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 52).
+transition(52, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 52).
+transition(52, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 52).
+transition(52, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 52).
+transition(52, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 53).
+transition(53, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 53).
+transition(53, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 53).
+transition(53, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 53).
+transition(53, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 53).
+transition(53, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 53).
+transition(53, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 53).
+transition(53, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+transition(0, S1, S2, S1, ['#'|S2], Res, Res, 61).
+transition(61, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 61).
+transition(61, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 61).
+transition(61, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 61).
+transition(61, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 61).
+transition(61, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 61).
+transition(61, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 61).
+transition(61, ['C','Wc'|S1], S2, S1, ['Wc','Wc'|S2], Res, Res, 62).
+transition(62, ['Wb'|S1], S2, S1, ['Wb'|S2], Res, Res, 62).
+transition(62, ['B'|S1], S2, S1, ['B'|S2], Res, Res, 62).
+transition(62, ['S'|S1], S2, S1, ['S'|S2], Res, Res, 62).
+transition(62, ['C'|S1], S2, S1, ['C'|S2], Res, Res, 62).
+transition(62, ['Wa'|S1], S2, S1, ['Wa'|S2], Res, Res, 62).
+transition(62, ['Wc'|S1], S2, S1, ['Wc'|S2], Res, Res, 62).
+transition(62, ['#'|S1], S2, ['#'|S1], S2, Res, Res, 63).
+transition(63, S1, ['Wb'|S2], ['Wb'|S1], S2, Res, Res, 63).
+transition(63, S1, ['B'|S2], ['B'|S1], S2, Res, Res, 63).
+transition(63, S1, ['S'|S2], ['S'|S1], S2, Res, Res, 63).
+transition(63, S1, ['C'|S2], ['C'|S1], S2, Res, Res, 63).
+transition(63, S1, ['Wa'|S2], ['Wa'|S1], S2, Res, Res, 63).
+transition(63, S1, ['Wc'|S2], ['Wc'|S1], S2, Res, Res, 63).
+transition(63, S1, ['#'|S2], S1, S2, Res, Res, 0).
+
+accepts('f3', [], [], [], _).
+accepts(_, S1, _, _, Len) :- length(S1, LenS1), LenS1 > Len, !, fail.
+accepts(State, S1, S2, Res, Len) :- 
+                      transition(State, S1, S2, NewS1, NewS2, Res, NewRes, NextState), 
+                      accepts(NextState, NewS1, NewS2, NewRes, Len).
+check_string(Str) :- string_chars(Str, StrList), length(StrList, L), 
+                      Len is L+1, distinct(accepts(0, ['S', '#'], [], StrList, Len)).
+gen_lang(Str) :- length(Str, L), Len is L+1, distinct(accepts(0, ['S', '#'], [], Str, Len)).
