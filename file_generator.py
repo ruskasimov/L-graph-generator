@@ -32,5 +32,5 @@ def create_prolog_program(graph, filename):
                       transition(State, S1, S2, NewS1, NewS2, Res, NewRes, NextState), 
                       accepts(NextState, NewS1, NewS2, NewRes, Len).\n""")
         file.write("""check_string(Str) :- string_chars(Str, StrList), length(StrList, L), 
-                      Len is L+1, distinct(accepts(0, ['S', '#'], [], StrList, Len)).\n""")
+                      Len is L+1, distinct(accepts(0, ['S', '#'], [], StrList, Len)), !.\n""")
         file.write("gen_lang(Str) :- length(Str, L), Len is L+1, distinct(accepts(0, ['S', '#'], [], Str, Len)).\n")
